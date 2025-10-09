@@ -15,6 +15,7 @@ export * from './components/Loading'
 // 导出 composables
 export * from './composables/useDialog'
 export * from './composables/useToast'
+export * from './styles/index.css'
 
 // 导出插件，支持 app.use(LumoUI)
 export { default as LumoUI } from './plugin'

@@ -1,2 +1,4 @@
-/* 基础样式 */
-@import "tailwindcss"
+@import "tailwindcss/utilities";
+@source "../**/*.{vue,ts,tsx}";
+@source "../../playground/**/*.{html,vue,ts}";
+@source "../../docs/**/*.{md,vue,ts,tsx}";
