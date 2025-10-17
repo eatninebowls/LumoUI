@@ -3,28 +3,10 @@
 支持手风琴与多展开模式，提供面板禁用与过渡动画。
 
 ## 基础用法
-<script setup lang="ts">
-import { ref } from 'vue'
-const active = ref(['item1'])
-</script>
-
-<LumoCollapse v-model="active">
-  <LumoCollapseItem name="item1" title="面板一">内容一</LumoCollapseItem>
-  <LumoCollapseItem name="item2" title="面板二">内容二</LumoCollapseItem>
-  <LumoCollapseItem name="item3" title="面板三" :disabled="true">禁用内容</LumoCollapseItem>
-</LumoCollapse>
+<demo vue="../example/Collapse/basic.vue" />
 
 ## 手风琴模式
-<script setup lang="ts">
-import { ref } from 'vue'
-const onlyOne = ref(['item2'])
-</script>
-
-<LumoCollapse v-model="onlyOne" :accordion="true">
-  <LumoCollapseItem name="item1" title="面板一">内容一</LumoCollapseItem>
-  <LumoCollapseItem name="item2" title="面板二">内容二</LumoCollapseItem>
-  <LumoCollapseItem name="item3" title="面板三">内容三</LumoCollapseItem>
-</LumoCollapse>
+<demo vue="../example/Collapse/admode.vue" />
 
 ## API
 

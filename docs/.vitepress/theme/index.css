@@ -1,0 +1,10 @@
+/* @import "tailwindcss"; */
+/* @source "../../docs*.{md,vue,ts,tsx}"; */
+.lumo-sandbox :is(button,input,select,textarea){
+  all:revert;
+}
+/* docs/.vitepress/theme/index.css */
+@import "tailwindcss/utilities";
+/* 扫描文档和源码组件 */
+@source "../../**/*.{md,vue,ts,tsx}";
+@source "../../../src/**/*.{vue,ts,tsx}";

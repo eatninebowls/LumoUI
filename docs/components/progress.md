@@ -3,17 +3,12 @@
 支持线性与圆形两种形态，支持文字显示、内显与右侧显示、自定义颜色与大小。
 
 ## 基础用法（线性）
-<demo-wrapper>
-<LumoProgress :percentage="30" />
-<LumoProgress :percentage="60" color="#22c55e" />
-<LumoProgress :percentage="90" :strokeWidth="8" :textInside="true" />
-</demo-wrapper>
+<demo vue="../example/Progress/basic.vue" />
 
 ## 圆形
-<demo-wrapper>
-<LumoProgress type="circle" :percentage="25" />
-<LumoProgress type="circle" :percentage="75" color="#ef4444" :width="140" :strokeWidth="10" />
-</demo-wrapper>
+<demo vue="../example/Progress/circle.vue" />
+
+
 
 ## API
 

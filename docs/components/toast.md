@@ -2,21 +2,12 @@
 
 支持四种类型、五种位置、自动/手动关闭，建议通过 `useToast()` 使用。
 
-## 通过组合式 API
-```ts
-import { useToast } from 'lumoui'
-const { success, error, warning, info } = useToast()
+## 基础用法
+<demo vue="../example/Toast/basic.vue" />
 
-success('操作成功！')
-error('发生错误', { duration: 5000 })
-warning('请注意！', { position: 'top-center' })
-info('这是一条信息')
-```
-
-## 组件直接使用（不推荐）
-```vue
-<LumoToast type="success" title="成功" message="保存成功" closable />
-```
+## 不同方向展示
+<demo vue="../example/Toast/position.vue" />
+``
 
 ## API
 

@@ -3,30 +3,19 @@
 支持尺寸、禁用、加载、颜色与文案自定义，并提供变更前钩子。
 
 ## 基础用法
-<script setup lang="ts">
-import { ref } from 'vue'
-const s1 = ref(false)
-const s2 = ref(true)
-</script>
+<demo vue="../example/Switch/basic.vue" />
 
-<demo-wrapper>
-<LumoSwitch v-model="s1" />
-<LumoSwitch v-model="s2" activeText="开启" inactiveText="关闭" />
-</demo-wrapper>
+
 
 ## 尺寸/禁用/加载
-<demo-wrapper>
-<LumoSwitch v-model="s1" size="sm" />
-<LumoSwitch v-model="s1" size="md" />
-<LumoSwitch v-model="s1" size="lg" />
-<LumoSwitch v-model="s1" disabled />
-<LumoSwitch v-model="s1" loading />
-</demo-wrapper>
+<demo vue="../example/Switch/more.vue" />
+
+
 
 ## 自定义颜色与宽度
-<demo-wrapper>
-<LumoSwitch v-model="s1" activeColor="#22c55e" inactiveColor="#d1d5db" :width="60" />
-</demo-wrapper>
+<demo vue="../example/Switch/costomize.vue" />
+
+
 
 ## 切换前钩子
 ```ts

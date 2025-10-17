@@ -3,24 +3,16 @@
 提供两种加载图标类型，支持大小、颜色、文案及纵向排列。
 
 ## 基础用法
-<demo-wrapper>
-<LumoLoading>加载中...</LumoLoading>
-<LumoLoading type="spinner">加载中...</LumoLoading>
-</demo-wrapper>
+<demo vue="../example/Loading/basic.vue" />
 
 ## 自定义大小与颜色
-<demo-wrapper>
-<LumoLoading :size="20" color="#3b82f6">蓝色 20px</LumoLoading>
-<LumoLoading :size="40" color="#ef4444" textColor="#ef4444" :vertical="true">红色 40px 纵向</LumoLoading>
-</demo-wrapper>
+<demo vue="../example/Loading/size-color.vue" />
+
 
 ## 自定义图标插槽
-<LumoLoading>
-  <template #icon>
-    <svg width="24" height="24"><circle cx="12" cy="12" r="10" stroke="currentColor" fill="none"/></svg>
-  </template>
-  自定义图标
-</LumoLoading>
+<demo vue="../example/Loading/customize.vue" />
+
+
 
 ## API
 

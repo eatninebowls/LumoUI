@@ -3,38 +3,15 @@
 支持线与卡片两种样式、四种位置、禁用、关闭与新增事件，内容延迟渲染。
 
 ## 基础用法
-<script setup lang="ts">
-import { ref } from 'vue'
-const active = ref('tab1')
-</script>
-
-<LumoTabs v-model="active" type="line" position="top">
-  <LumoTabPane name="tab1" label="标签一">内容一</LumoTabPane>
-  <LumoTabPane name="tab2" label="标签二" closable>内容二</LumoTabPane>
-  <LumoTabPane name="tab3" label="标签三" disabled>禁用</LumoTabPane>
-</LumoTabs>
+<demo vue="../example/Tabs/basic.vue" />
 
 ## 卡片/位置/延迟渲染
-<script setup lang="ts">
-import { ref } from 'vue'
-const active2 = ref('card1')
-</script>
-
-<LumoTabs v-model="active2" type="card" position="top">
-  <LumoTabPane name="card1" label="卡片一">内容一</LumoTabPane>
-  <LumoTabPane name="card2" label="卡片二" lazy>首次激活时渲染</LumoTabPane>
-</LumoTabs>
+<demo vue="../example/Tabs/more.vue" />
 
 ## 事件
-<script setup lang="ts">
-const onClick = (name:string) => console.log('tab-click', name)
-const onRemove = (name:string) => console.log('tab-remove', name)
-</script>
+<demo vue="../example/Tabs/event.vue" />
 
-<LumoTabs v-model="active" @tab-click="onClick" @tab-remove="onRemove">
-  <LumoTabPane name="tab1" label="一">一</LumoTabPane>
-  <LumoTabPane name="tab2" label="二" closable>二</LumoTabPane>
-</LumoTabs>
+
 
 ## API
 

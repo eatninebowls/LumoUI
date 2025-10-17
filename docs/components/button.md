@@ -6,44 +6,23 @@
 <demo vue="../example/Button/basic.vue" />
 
 ## 尺寸
-<demo-wrapper>
-<LumoButton size="sm">小按钮</LumoButton>
-<LumoButton size="md">中按钮</LumoButton>
-<LumoButton size="lg">大按钮</LumoButton>
-</demo-wrapper>
+<demo vue="../example/Button/size.vue" />
 
 ## 镂空（outline）
-<demo-wrapper>
-<LumoButton outline>Primary</LumoButton>
-<LumoButton variant="secondary" outline>Secondary</LumoButton>
-<LumoButton variant="danger" outline>Danger</LumoButton>
-<LumoButton variant="success" outline>Success</LumoButton>
-</demo-wrapper>
+<demo vue="../example/Button/outline.vue" />
 
 ## 圆形按钮
-<demo-wrapper>
-<LumoButton isCircle size="sm">A</LumoButton>
-<LumoButton isCircle size="md">B</LumoButton>
-<LumoButton isCircle size="lg">C</LumoButton>
-</demo-wrapper>
+<demo vue="../example/Button/isCircle.vue" />
+
+
 
 ## 禁用与加载
-<demo-wrapper>
-<LumoButton disabled>禁用</LumoButton>
-<LumoButton loading>加载中</LumoButton>
-</demo-wrapper>
+<demo vue="../example/Button/disbled-loading.vue" />
+
+
 
 ## 事件示例
-<script setup lang="ts">
-import { ref } from 'vue'
-const clickCount = ref(0)
-const handleClick = () => { clickCount.value++ }
-</script>
-
-<demo-wrapper>
-<LumoButton @click="handleClick">点我增加计数</LumoButton>
-<span>点击次数：{{ clickCount }}</span>
-</demo-wrapper>
+<demo vue="../example/Button/clickEvent.vue" />
 
 ## 插槽
 - 默认插槽：按钮文本或自定义内容

@@ -3,46 +3,18 @@
 提供提示与确认两类对话框，支持遮罩关闭、标题显示、按钮文案自定义，以及程序化调用。
 
 ## 基础用法（v-model）
-<script setup lang="ts">
-import { ref } from 'vue'
-const show = ref(false)
-</script>
-
-<LumoButton @click="show = true">打开对话框</LumoButton>
-<LumoDialog v-model="show" type="alert" title="提示" message="这是内容" />
+<demo vue="../example/Dialog/basic.vue" />
 
 ## 确认框
-<script setup lang="ts">
-import { ref } from 'vue'
-const showConfirm = ref(false)
-</script>
-
-<LumoButton @click="showConfirm = true">确认操作</LumoButton>
-<LumoDialog
-  v-model="showConfirm"
-  type="confirm"
-  title="确认"
-  message="确定要继续吗？"
-  showCancel
-  confirmText="继续"
-  cancelText="返回"
-/>
+<demo vue="../example/Dialog/confirm.vue" />
 
 ## 遮罩/关闭配置
-<demo-wrapper>
-<LumoDialog :visible="true" title="可点遮罩关闭" message="maskClosable = true（默认）" />
-<LumoDialog :visible="true" :maskClosable="false" title="不可点遮罩关闭" message="maskClosable = false" />
-</demo-wrapper>
+<demo vue="../example/Dialog/closable.vue" />
+
+
 
 ## 程序化调用
-```ts
-import { useDialog } from 'lumoui'
-
-const { alert, alertNoTitle, confirm } = useDialog()
-await alert('保存成功', { title: '提示' })      // 返回 true
-await alertNoTitle('操作成功')                   // 返回 true
-const ok = await confirm('确认要删除？')         // 返回 true/false
-```
+<demo vue="../example/Dialog/programmactic.vue" />
 
 ## API
 

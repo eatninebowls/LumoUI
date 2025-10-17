@@ -3,33 +3,16 @@
 支持三种状态、三种尺寸、禁用、圆角、搜索图标与多种输入类型。
 
 ## 基础用法
-<script setup lang="ts">
-import { ref } from 'vue'
-const text = ref('')
-</script>
-
-<LumoInput v-model="text" placeHolder="请输入内容" />
+<demo vue="../example/Input/basic.vue" />
 
 ## 尺寸与圆角
-<demo-wrapper>
-<LumoInput size="sm" placeHolder="小"></LumoInput>
-<LumoInput size="md" placeHolder="中" :isRound="true"></LumoInput>
-<LumoInput size="lg" placeHolder="大"></LumoInput>
-</demo-wrapper>
+<demo vue="../example/Input/size-isRound.vue" />
 
 ## 状态
-<demo-wrapper>
-<LumoInput state="normal" placeHolder="正常" />
-<LumoInput state="wrong" placeHolder="错误" />
-<LumoInput state="success" placeHolder="成功" />
-</demo-wrapper>
+<demo vue="../example/Input/state.vue" />
 
 ## 输入类型与搜索
-<demo-wrapper>
-<LumoInput contentType="password" placeHolder="密码" />
-<LumoInput contentType="email" placeHolder="邮箱" />
-<LumoInput :searchable="true" placeHolder="搜索..." />
-</demo-wrapper>
+<demo vue="../example/Input/type.vue" />
 
 ## API
 

@@ -3,32 +3,13 @@
 支持禁用、清空、尺寸与状态样式、可过滤搜索，提供完整的选择交互。
 
 ## 基础用法
-<script setup lang="ts">
-import { ref } from 'vue'
-const value = ref('option1')
-const options = [
-  { label: '选项一', value: 'option1' },
-  { label: '选项二', value: 'option2' },
-  { label: '选项三', value: 'option3' },
-  { label: '禁用', value: 'disabled', disabled: true },
-]
-</script>
-
-<LumoSelect v-model="value" :options="options" placeholder="请选择" />
+<demo vue="../example/Select/basic.vue" />
 
 ## 清空、过滤与状态
-<demo-wrapper>
-<LumoSelect clearable v-model="value" :options="options" placeholder="可清空" />
-<LumoSelect filterable v-model="value" :options="options" placeholder="可过滤" />
-<LumoSelect state="wrong" v-model="value" :options="options" placeholder="错误态" />
-</demo-wrapper>
+<demo vue="../example/Select/state.vue" />
 
 ## 尺寸与圆角
-<demo-wrapper>
-<LumoSelect size="sm" v-model="value" :options="options" />
-<LumoSelect size="md" v-model="value" :options="options" :isRound="true" />
-<LumoSelect size="lg" v-model="value" :options="options" />
-</demo-wrapper>
+<demo vue="../example/Select/size-isRound.vue" />
 
 ## API
 

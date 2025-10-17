@@ -1,4 +1,7 @@
 import { defineConfig } from 'vitepress'
+import {vitepressDemoPlugin} from 'vitepress-demo-plugin'
+import { componentPreview, containerPreview } from '@vitepress-demo-preview/plugin'
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   title: 'LumoUI',
@@ -50,4 +53,14 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/eatninebowls/LumoUI' },
     ],
   },
+  markdown:{
+    config(md){
+      md.use(vitepressDemoPlugin)
+      md.use(componentPreview)
+      md.use(containerPreview)
+    }
+  },
+  vite:{
+    plugins:[tailwindcss()] as any
+  }
 })

@@ -81,7 +81,7 @@ onMounted(() => {
     <div
       v-if="visible && !isLeaving"
       :class="[
-        'fixed z-50 max-w-sm w-full border rounded-lg shadow-lg p-4',
+        'fixed z-[9999] max-w-sm w-full border rounded-lg shadow-lg p-4 pointer-events-auto',
         typeClasses,
         positionClasses
       ]"
