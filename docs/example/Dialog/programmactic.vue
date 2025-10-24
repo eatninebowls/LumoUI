@@ -1,25 +1,22 @@
 <template>
   <div class="flex flex-wrap gap-3">
-    <button
-      class="btn bg-blue-500 hover:bg-blue-600"
+    <LumoButton
       @click="showAlert"
     >
       Alert 弹窗
-    </button>
+    </LumoButton>
 
-    <button
-      class="btn bg-green-500 hover:bg-green-600"
+    <LumoButton
       @click="showAlertNoTitle"
     >
       无标题弹窗
-    </button>
+    </LumoButton>
 
-    <button
-      class="btn bg-red-500 hover:bg-red-600"
+    <LumoButton 
       @click="showConfirm"
     >
       Confirm 确认框
-    </button>
+    </LumoButton>
   </div>
 </template>
 

@@ -1,0 +1,19 @@
+/* 只覆盖首页第一个按钮（快速开始） */
+.VPHomeHero  .VPButton:first-child {
+  background: linear-gradient(120deg, #8fffa9 40%, #fff873);
+  color: #000;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0 4px 12px rgba(255, 248, 115, 0.4);
+  transition: all 0.3s ease;
+}
+
+.VPHomeHero .VPButton:first-child:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(255, 248, 115, 0.6);
+}
+
+/* 如果你想让 hero 名字的渐变也全局统一 */
+:root {
+  --vp-home-hero-name-background: linear-gradient(120deg, #8fffa9 40%, #fff873);
+}
