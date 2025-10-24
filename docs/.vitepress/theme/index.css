@@ -1,0 +1,8 @@
+/* @import "tailwindcss"; */
+/* @source "../../docs*.{md,vue,ts,tsx}"; */
+/* docs/.vitepress/theme/index.css */
+@import "tailwindcss/utilities";
+/* 扫描文档和源码组件 */
+@source "../../**/*.{md,vue,ts,tsx}";
+@source "../../../src/**/*.{vue,ts,tsx}";
+@import "../../../src/styles/index.css";

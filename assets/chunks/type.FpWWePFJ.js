@@ -1,0 +1,1 @@
+import{_ as c,B as t,c as n,o as a,G as o}from"./framework.CtrY3aSn.js";const s={},r={class:"flex flex-col gap-3"};function l(p,_){const e=t("LumoInput");return a(),n("div",r,[o(e,{contentType:"password",placeHolder:"密码"}),o(e,{contentType:"email",placeHolder:"邮箱"}),o(e,{searchable:!0,placeHolder:"搜索..."})])}const m=c(s,[["render",l]]);export{m as default};

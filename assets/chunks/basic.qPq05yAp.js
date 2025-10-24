@@ -1,0 +1,1 @@
+import{d as n,p as l,B as s,c as p,o as r,G as u}from"./framework.CtrY3aSn.js";const c={class:"flex flex-wrap gap-3"},f=n({__name:"basic",setup(m){const e=l("");return(d,o)=>{const t=s("LumoInput");return r(),p("div",c,[u(t,{modelValue:e.value,"onUpdate:modelValue":o[0]||(o[0]=a=>e.value=a),placeHolder:"请输入内容"},null,8,["modelValue"])])}}});export{f as default};

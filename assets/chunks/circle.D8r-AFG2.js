@@ -1,0 +1,1 @@
+import{_ as o,B as r,c as t,o as s,G as c}from"./framework.CtrY3aSn.js";const n={},a={class:"flex flex-wrap gap-4"};function _(l,p){const e=r("LumoProgress");return s(),t("div",a,[c(e,{type:"circle",percentage:25}),c(e,{type:"circle",percentage:75,color:"#ef4444",width:140,strokeWidth:10})])}const f=o(n,[["render",_]]);export{f as default};

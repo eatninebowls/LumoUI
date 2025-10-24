@@ -1,0 +1,17 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/chunks/circle.D8r-AFG2.js","assets/chunks/framework.CtrY3aSn.js","assets/chunks/basic.D7uQwIed.js"])))=>i.map(i=>d[i]);
+import{_,D as v,v as p,aq as u,p as g,B as x,c as y,o as P,j as c,a1 as h,G as t,a3 as w,a as i,a2 as m,k as e,w as s,ar as b}from"./chunks/framework.CtrY3aSn.js";import"./chunks/theme.Dsv0trK8.js";import{L as f,N as k}from"./chunks/index.uFE-mFVl.js";const W=`<template>\r
+  <div class="flex flex-wrap gap-4">\r
+    <LumoProgress type="circle" :percentage="25" />\r
+    <LumoProgress type="circle" :percentage="75" color="#ef4444" :width="140" :strokeWidth="10" />\r
+  </div>\r
+</template>\r
+\r
+`,D=`<template>\r
+  <div class="flex flex-col gap-4">\r
+    <LumoProgress :percentage="30" />\r
+    <LumoProgress :percentage="60" color="#22c55e" />\r
+    <LumoProgress :percentage="90" :strokeWidth="16" :textInside="true" />\r
+  </div>\r
+\r
+</template>\r
+`,S=JSON.parse('{"title":"Progress 进度条","description":"","frontmatter":{},"headers":[],"relativePath":"components/progress.md","filePath":"components/progress.md","lastUpdated":1760685628000}'),A={name:"components/progress.md"},B=Object.assign(A,{setup(C){const r=v();p(async()=>{r.value=(await u(async()=>{const{default:o}=await import("./chunks/circle.D8r-AFG2.js");return{default:o}},__vite__mapDeps([0,1]))).default});const d=g(!0),l=v();return p(async()=>{l.value=(await u(async()=>{const{default:o}=await import("./chunks/basic.D7uQwIed.js");return{default:o}},__vite__mapDeps([2,1]))).default}),(o,a)=>{const n=x("ClientOnly");return P(),y("div",null,[a[2]||(a[2]=c("h1",{id:"progress-进度条",tabindex:"-1"},[i("Progress 进度条 "),c("a",{class:"header-anchor",href:"#progress-进度条","aria-label":'Permalink to "Progress 进度条"'},"​")],-1)),a[3]||(a[3]=c("p",null,"支持线性与圆形两种形态，支持文字显示、内显与右侧显示、自定义颜色与大小。",-1)),a[4]||(a[4]=c("h2",{id:"基础用法-线性",tabindex:"-1"},[i("基础用法（线性） "),c("a",{class:"header-anchor",href:"#基础用法-线性","aria-label":'Permalink to "基础用法（线性）"'},"​")],-1)),h(t(e(f),null,null,512),[[m,d.value]]),t(n,null,{default:s(()=>[t(e(k),{title:"",description:"",locale:"",select:"vue",order:"vue,react,html",github:"",gitlab:"",theme:"",lightTheme:"",darkTheme:"",stackblitz:"%7B%22show%22%3Afalse%7D",codesandbox:"%7B%22show%22%3Afalse%7D",codeplayer:"%7B%22show%22%3Afalse%7D",files:"%7B%22vue%22%3A%7B%7D%2C%22react%22%3A%7B%7D%2C%22html%22%3A%7B%7D%7D",scope:"",htmlWriteWay:"write",background:"undefined",visible:!0,onMount:a[0]||(a[0]=()=>{d.value=!1}),vueCode:e(D)},b({_:2},[l.value?{name:"vue",fn:s(()=>[t(e(l))]),key:"0"}:void 0]),1032,["vueCode"])]),_:1}),a[5]||(a[5]=c("h2",{id:"圆形",tabindex:"-1"},[i("圆形 "),c("a",{class:"header-anchor",href:"#圆形","aria-label":'Permalink to "圆形"'},"​")],-1)),h(t(e(f),null,null,512),[[m,d.value]]),t(n,null,{default:s(()=>[t(e(k),{title:"",description:"",locale:"",select:"vue",order:"vue,react,html",github:"",gitlab:"",theme:"",lightTheme:"",darkTheme:"",stackblitz:"%7B%22show%22%3Afalse%7D",codesandbox:"%7B%22show%22%3Afalse%7D",codeplayer:"%7B%22show%22%3Afalse%7D",files:"%7B%22vue%22%3A%7B%7D%2C%22react%22%3A%7B%7D%2C%22html%22%3A%7B%7D%7D",scope:"",htmlWriteWay:"write",background:"undefined",visible:!0,onMount:a[1]||(a[1]=()=>{d.value=!1}),vueCode:e(W)},b({_:2},[r.value?{name:"vue",fn:s(()=>[t(e(r))]),key:"0"}:void 0]),1032,["vueCode"])]),_:1}),a[6]||(a[6]=w("",9))])}}}),E=_(B,[["__scopeId","data-v-8c68ca63"]]);export{S as __pageData,E as default};
