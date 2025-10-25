@@ -1,3 +1,4 @@
+import './Input.css'
 import Input from './Input.vue';
 import { withInstall } from "../../utils/withInstall";
 

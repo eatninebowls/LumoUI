@@ -16,17 +16,17 @@ const props = withDefaults(defineProps<ButtonProps>(), {
 const variantClasses = computed(() => {
   const variants = {
     primary: props.outline
-      ? 'border border-blue-600 text-blue-600 bg-white hover:bg-blue-50'
-      : 'bg-blue-600 text-white hover:bg-blue-700',
+      ? 'border border-blue-500 text-blue-500 bg-white hover:bg-blue-50'
+      : 'bg-blue-500 text-white hover:bg-blue-600',
     secondary: props.outline
       ? 'border border-gray-300 text-gray-700 bg-white hover:bg-gray-50'
       : 'bg-gray-200 text-gray-800 hover:bg-gray-300',
     danger: props.outline
-      ? 'border border-red-600 text-red-600 bg-white hover:bg-red-50'
-      : 'bg-red-600 text-white hover:bg-red-700',
+      ? 'border border-red-500 text-red-500 bg-white hover:bg-red-50'
+      : 'bg-red-500 text-white hover:bg-red-600',
     success: props.outline
-      ? 'border border-green-600 text-green-600 bg-white hover:bg-green-50'
-      : 'bg-green-500 text-white hover:bg-green-600',
+      ? 'border border-emerald-600 text-emerald-600 bg-white hover:bg-emerald-50'
+      : 'bg-emerald-500 text-white hover:bg-emerald-600',
   }
   return variants[props.variant]
 })
@@ -56,7 +56,7 @@ const handleClick = () => {
 <template>
   <button
     @click="handleClick"
-    class="font-medium transition-colors flex items-center justify-center gap-2"
+    class="lumoui-btn font-medium transition-colors flex items-center justify-center gap-2"
     :class="[
       variantClasses,
       sizeClasses,
@@ -64,6 +64,8 @@ const handleClick = () => {
       props.isCircle ? 'rounded-full' : 'rounded-md',
     ]"
     :disabled="props.disabled || props.loading"
+    :data-variant="props.variant"
+    :data-outline="props.outline ? 'true' : 'false'"
   >
     <!-- 加载中状态 -->
     <svg

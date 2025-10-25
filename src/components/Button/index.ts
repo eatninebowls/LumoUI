@@ -1,3 +1,4 @@
+import './Button.css'
 import Button from './Button.vue'
 import { withInstall } from '../../utils/withInstall'
 

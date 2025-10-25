@@ -1,0 +1,70 @@
+/* 暗黑模式下 Select 的底色与文字、边框与过渡 */
+html.dark .lumoui-select {
+  background-color: #0f172a8a;     /* slate-900 半透明，与 Input 对齐 */
+  border-color: #334155;           /* slate-700 */
+  color: #e5e7eb;                  /* gray-200 */
+  transition: box-shadow .2s ease, filter .2s ease, border-color .2s ease;
+}
+
+/* 占位符颜色（当使用 filterable 时） */
+html.dark .lumoui-select input::placeholder {
+  color: #94a3b8;                  /* slate-400 */
+}
+
+/* 禁用态 */
+html.dark .lumoui-select[disabled],
+html.dark .lumoui-select:has(input:disabled) {
+  background-color: #1f2937;       /* gray-800 */
+  color: #9ca3af;                  /* gray-400 */
+}
+
+/* 默认（normal）聚焦：蓝绿柔光（focus-within 命中容器） */
+html.dark .lumoui-select[data-state="normal"]:focus-within {
+  border-color: #2da4ffd6; /* 接近 emerald-500 的蓝绿 */
+  box-shadow:
+    0 0 10px rgba(34, 129, 197, 0.35),
+    inset 0 0 0 1px rgba(34, 129, 197, 0.35);
+  filter: brightness(1.03);
+}
+
+/* 错误态（wrong）聚焦：红色光晕 */
+html.dark .lumoui-select[data-state="wrong"]:focus-within {
+  border-color: #ef4444; /* red-500 */
+  box-shadow:
+    0 0 10px rgba(239, 68, 68, 0.35),
+    inset 0 0 0 1px rgba(239, 68, 68, 0.65);
+  filter: brightness(1.03);
+}
+
+/* 成功态（success）聚焦：更亮的绿色光晕，与按钮一致 */
+html.dark .lumoui-select[data-state="success"]:focus-within {
+  border-color: #22c556ff; /* emerald-500 */
+  box-shadow:
+    0 2px 10px rgba(34, 197, 94, 0.74),   /* 与按钮一致的外部光晕强度 */
+    inset 0 0 0 1px rgba(34, 197, 94, 0.75);
+  filter: brightness(1.05);
+}
+
+/* 下拉弹层：底色、边框与文字颜色 */
+html.dark .lumoui-select-dropdown {
+  background-color: #0b1221;       /* 更深的 slate-950-ish 提升层次 */
+  border-color: #334155;           /* slate-700 */
+  color: #e5e7eb;                  /* gray-200 */
+  box-shadow: 0 8px 24px rgba(2, 6, 23, 0.6);
+}
+
+/* 下拉项的通用样式、悬停样式（不影响 disabled） */
+html.dark .lumoui-select-dropdown > div:not(.cursor-not-allowed) {
+  transition: background-color .15s ease, color .15s ease;
+}
+html.dark .lumoui-select-dropdown > div:not(.cursor-not-allowed):hover {
+  background-color: rgba(148, 163, 184, 0.15); /* slate-400 半透明 */
+}
+
+/* 选中项覆盖（替换浅色的蓝背景与蓝文字） */
+html.dark .lumoui-select-dropdown > div.bg-blue-50 {
+  background-color: rgba(59, 130, 246, 0.18) !important; /* blue-500 半透明 */
+}
+html.dark .lumoui-select-dropdown > div.text-blue-600 {
+  color: #93c5fd !important; /* blue-300-ish，与暗底对比更佳 */
+}

@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
+    "docs:deploy": "gh-pages -d docs/.vitepress/dist",
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
@@ -23,6 +24,7 @@
     "@vitepress-demo-preview/plugin": "^1.4.1",
     "@vue/tsconfig": "^0.7.0",
     "autoprefixer": "^10.4.21",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.13",
     "typescript": "~5.9.2",

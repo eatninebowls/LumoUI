@@ -124,8 +124,9 @@ onUnmounted(() => {
 
 <template>
   <div ref="selectRef" class="relative">
+    <!-- 交互容器：新增 lumoui-select 类与 data-state -->
     <div
-      class="w-full border px-4 py-2 transition-all duration-200 cursor-pointer
+      class="lumoui-select w-full border px-4 py-2 transition-all duration-200 cursor-pointer
              disabled:opacity-50 disabled:cursor-not-allowed
              focus-within:ring-2 focus-within:ring-opacity-50 focus-within:outline-none
              flex items-center justify-between"
@@ -135,6 +136,7 @@ onUnmounted(() => {
         props.disabled ? 'bg-gray-100' : 'bg-white',
         props.isRound ? 'rounded-2xl' : 'rounded-sm'
       ]"
+      :data-state="props.state"
       @click="toggleDropdown"
     >
       <!-- 输入框或显示文本 -->
@@ -180,10 +182,10 @@ onUnmounted(() => {
       </div>
     </div>
 
-    <!-- 下拉选项 -->
+    <!-- 下拉选项：新增 lumoui-select-dropdown 类，用于暗黑模式样式覆盖 -->
     <div
       v-show="isOpen"
-      class="absolute z-50 w-full mt-1 bg-white border border-gray-200 rounded-md shadow-lg max-h-60 overflow-auto"
+      class="lumoui-select-dropdown absolute z-50 w-full mt-1 bg-white border border-gray-200 rounded-md shadow-lg max-h-60 overflow-auto"
     >
       <div
         v-if="filteredOptions.length === 0"

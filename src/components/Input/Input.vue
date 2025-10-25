@@ -59,7 +59,7 @@ const sizeClasses=computed(()=>{
     @input="handleInput"
     @focus="handleFocus"
     @blur="handleBlur"
-    class=" w-full border px-5   py-2 transition-all duration-200
+    class="lumoui-input w-full border px-5   py-2 transition-all duration-200
            disabled:opacity-50 disabled:cursor-not-allowed
            focus:ring-2 focus:ring-opacity-50 focus:outline-none"
     :class="[
@@ -71,6 +71,7 @@ const sizeClasses=computed(()=>{
     :disabled="props.disabled"
     :placeholder="props.placeHolder"
     :isRound="props.isRound"
+    :data-state="props.state"
   />
   </div>
 </template>

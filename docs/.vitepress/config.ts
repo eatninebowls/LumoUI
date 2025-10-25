@@ -4,6 +4,7 @@ import { componentPreview, containerPreview } from '@vitepress-demo-preview/plug
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
+  base: '/LumoUI/',
   title: 'LumoUI',
   description: '轻量优雅的 Vue3 + Tailwind 组件库',
   lastUpdated: true,

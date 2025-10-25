@@ -1,3 +1,4 @@
+import './Select.css'
 import Select from './Select.vue'
 import { withInstall } from '../../utils/withInstall'
 

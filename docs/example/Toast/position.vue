@@ -1,13 +1,12 @@
 <template>
   <div class="grid grid-cols-3 gap-4">
-    <button
+    <LumoButton
       v-for="pos in positions"
       :key="pos"
-      class="border rounded px-3 py-1 text-sm bg-gray-100 hover:bg-gray-200"
       @click="show(pos)"
     >
       {{ pos }}
-    </button>
+    </LumoButton>
   </div>
 </template>
 

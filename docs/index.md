@@ -55,4 +55,11 @@ features:
     --vp-home-hero-image-filter: blur(68px);
   }
 }
+/* 暗黑模式：统一将 brand/alt 按钮文字改为黑色 */
+html.dark {
+  --vp-button-brand-text: #000;
+  --vp-button-brand-hover-text: #000;
+  --vp-button-alt-text: #000;
+  --vp-button-alt-hover-text: #000;
+}
 </style>
