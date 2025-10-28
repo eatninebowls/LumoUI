@@ -13,6 +13,35 @@
     "docs:deploy": "gh-pages -d docs/.vitepress/dist",
     "docs:preview": "vitepress preview docs"
   },
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    },
+    "./styles/index.css": "./dist/style.css"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "peerDependencies": {
+    "vue": "^3.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eatninebowls/LumoUI.git"
+  },
+  "homepage": "https://eatninebowls.github.io/LumoUI/",
+  "bugs": {
+    "url": "https://github.com/eatninebowls/LumoUI/issues"
+  },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
     "vue": "^3.5.18"

@@ -9,7 +9,7 @@
 
 ## 📦 安装
 ```bash
-pnpm add lumo-ui
+pnpm add lumoui
 ## 🔗 链接
 
 https://eatninebowls.github.io/LumoUI/
