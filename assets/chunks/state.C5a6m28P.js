@@ -1,0 +1,1 @@
+import{_ as t,C as c,c as s,o as a,G as o}from"./framework.DOx3S1oU.js";const n={},r={class:"flex flex-col gap-3"};function l(_,p){const e=c("LumoInput");return a(),s("div",r,[o(e,{state:"normal",placeHolder:"正常"}),o(e,{state:"wrong",placeHolder:"错误"}),o(e,{state:"success",placeHolder:"成功"})])}const m=t(n,[["render",l]]);export{m as default};

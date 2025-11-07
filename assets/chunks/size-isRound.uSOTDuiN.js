@@ -1,1 +1,0 @@
-import{_ as s,B as c,c as n,o as t,G as o}from"./framework.CtrY3aSn.js";const r={},a={class:"flex flex-col gap-3"};function l(_,d){const e=c("LumoInput");return t(),n("div",a,[o(e,{size:"sm",placeHolder:"小"}),o(e,{size:"md",placeHolder:"中",isRound:!0}),o(e,{size:"lg",placeHolder:"大"})])}const i=s(r,[["render",l]]);export{i as default};

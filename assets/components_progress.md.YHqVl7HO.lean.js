@@ -1,0 +1,17 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/chunks/circle.D9R5y9h6.js","assets/chunks/framework.DOx3S1oU.js","assets/chunks/basic.XuQxFebM.js"])))=>i.map(i=>d[i]);
+import{_ as k,D as b,v,aq as u,p as g,C as y,c as P,o as V,j as e,a1 as h,G as t,a3 as x,a as n,a2 as p,k as d,w as o,ar as m}from"./chunks/framework.DOx3S1oU.js";import"./chunks/theme.D_SsfZ-D.js";import{L as f,N as _}from"./chunks/index.DVqUTNst.js";const T=`<template>
+  <div class="flex flex-wrap gap-4">
+    <LumoProgress type="circle" :percentage="25" />
+    <LumoProgress type="circle" :percentage="75" color="#ef4444" :width="140" :strokeWidth="10" />
+  </div>
+</template>
+
+`,w=`<template>
+  <div class="flex flex-col gap-4">
+    <LumoProgress :percentage="30" />
+    <LumoProgress :percentage="60" color="#22c55e" />
+    <LumoProgress :percentage="90" :strokeWidth="16" :textInside="true" />
+  </div>
+
+</template>
+`,q=JSON.parse('{"title":"Progress 进度条","description":"","frontmatter":{},"headers":[],"relativePath":"components/progress.md","filePath":"components/progress.md","lastUpdated":1762500791000}'),B={name:"components/progress.md"},D=Object.assign(B,{setup(A){const r=b();v(async()=>{r.value=(await u(async()=>{const{default:s}=await import("./chunks/circle.D9R5y9h6.js");return{default:s}},__vite__mapDeps([0,1]))).default});const c=g(!0),l=b();return v(async()=>{l.value=(await u(async()=>{const{default:s}=await import("./chunks/basic.XuQxFebM.js");return{default:s}},__vite__mapDeps([2,1]))).default}),(s,a)=>{const i=y("ClientOnly");return V(),P("div",null,[a[2]||(a[2]=e("h1",{id:"progress-进度条",tabindex:"-1"},[n("Progress 进度条 "),e("a",{class:"header-anchor",href:"#progress-进度条","aria-label":'Permalink to "Progress 进度条"'},"​")],-1)),a[3]||(a[3]=e("p",null,"支持线性与圆形两种形态，支持文字显示、内显与右侧显示、自定义颜色与大小。",-1)),a[4]||(a[4]=e("h2",{id:"基础用法-线性",tabindex:"-1"},[n("基础用法（线性） "),e("a",{class:"header-anchor",href:"#基础用法-线性","aria-label":'Permalink to "基础用法（线性）"'},"​")],-1)),h(t(d(f),null,null,512),[[p,c.value]]),t(i,null,{default:o(()=>[t(d(_),{title:"",description:"",locale:"",select:"vue",order:"vue,react,html",github:"",gitlab:"",theme:"",lightTheme:"",darkTheme:"",stackblitz:"%7B%22show%22%3Afalse%7D",codesandbox:"%7B%22show%22%3Afalse%7D",codeplayer:"%7B%22show%22%3Afalse%7D",files:"%7B%22vue%22%3A%7B%7D%2C%22react%22%3A%7B%7D%2C%22html%22%3A%7B%7D%7D",scope:"",htmlWriteWay:"write",background:"undefined",visible:!0,onMount:a[0]||(a[0]=()=>{c.value=!1}),vueCode:d(w)},m({_:2},[l.value?{name:"vue",fn:o(()=>[t(d(l))]),key:"0"}:void 0]),1032,["vueCode"])]),_:1}),a[5]||(a[5]=e("h2",{id:"圆形",tabindex:"-1"},[n("圆形 "),e("a",{class:"header-anchor",href:"#圆形","aria-label":'Permalink to "圆形"'},"​")],-1)),h(t(d(f),null,null,512),[[p,c.value]]),t(i,null,{default:o(()=>[t(d(_),{title:"",description:"",locale:"",select:"vue",order:"vue,react,html",github:"",gitlab:"",theme:"",lightTheme:"",darkTheme:"",stackblitz:"%7B%22show%22%3Afalse%7D",codesandbox:"%7B%22show%22%3Afalse%7D",codeplayer:"%7B%22show%22%3Afalse%7D",files:"%7B%22vue%22%3A%7B%7D%2C%22react%22%3A%7B%7D%2C%22html%22%3A%7B%7D%7D",scope:"",htmlWriteWay:"write",background:"undefined",visible:!0,onMount:a[1]||(a[1]=()=>{c.value=!1}),vueCode:d(T)},m({_:2},[r.value?{name:"vue",fn:o(()=>[t(d(r))]),key:"0"}:void 0]),1032,["vueCode"])]),_:1}),a[6]||(a[6]=x("",9))])}}}),S=k(D,[["__scopeId","data-v-c063bcd8"]]);export{q as __pageData,S as default};

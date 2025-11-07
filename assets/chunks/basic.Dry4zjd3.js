@@ -1,1 +1,0 @@
-import{_ as s,B as r,c as l,o as c,G as t,w as n,a,F as d}from"./framework.CtrY3aSn.js";const m={};function u(_,e){const o=r("LumoLoading");return c(),l(d,null,[t(o,null,{default:n(()=>[...e[0]||(e[0]=[a("加载中...",-1)])]),_:1}),t(o,{type:"spinner"},{default:n(()=>[...e[1]||(e[1]=[a("加载中...",-1)])]),_:1})],64)}const i=s(m,[["render",u]]);export{i as default};

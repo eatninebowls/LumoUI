@@ -1,1 +1,0 @@
-import{_ as c,B as t,c as s,o as r,G as o}from"./framework.CtrY3aSn.js";const n={},a={class:"flex flex-col gap-4"};function _(l,p){const e=t("LumoProgress");return r(),s("div",a,[o(e,{percentage:30}),o(e,{percentage:60,color:"#22c55e"}),o(e,{percentage:90,strokeWidth:16,textInside:!0})])}const f=c(n,[["render",_]]);export{f as default};
