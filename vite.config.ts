@@ -8,7 +8,12 @@ export default defineConfig({
   plugins: [
     vue(),
     tailwindcss(),
-    dts({ insertTypesEntry: true })//?
+    dts({
+      tsconfigPath: './tsconfig.app.json',
+      outDir: 'dist',
+      rollupTypes: true,
+      insertTypesEntry: true
+    })
   ],
   build:{
     lib:{

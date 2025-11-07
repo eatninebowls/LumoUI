@@ -274,9 +274,9 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-// import { useDialog, useToast } from 'lumoui'
-import { useDialog } from '../../src'
-import { useToast } from '../../src'
+import { useDialog, useToast } from '@eatninebowls/lumoui'
+// import { useDialog } from '../../src'
+// import { useToast } from '../../src'
 // 响应式数据
 const inputValue = ref('')
 const selectValue = ref('')

@@ -16,13 +16,16 @@
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.es.js",
       "require": "./dist/index.umd.js"
     },
-    "./styles/index.css": "./dist/style.css"
+    "./styles/index.css": "./dist/lumoui.css"
   },
   "files": [
     "dist",
@@ -43,6 +46,7 @@
     "url": "https://github.com/eatninebowls/LumoUI/issues"
   },
   "dependencies": {
+    "@eatninebowls/lumoui": "^0.0.0",
     "@tailwindcss/vite": "^4.1.13",
     "vue": "^3.5.18"
   },
